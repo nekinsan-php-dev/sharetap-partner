@@ -32,7 +32,7 @@
         </div>
         <div class="container mx-auto px-4 py-20">
             <div class="max-w-4xl mx-auto text-center">
-                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">Transform Business Networking with Digital Innovation</h1>
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">Become a Distributor with ShareTap and Earn Attractive Margins!</h1>
                 <p class="text-xl mb-8 text-blue-100">Join ShareTap's distributor network and lead the digital business card revolution</p>
                 <div class="flex gap-4 justify-center">
                     <a href="#contact" class="bg-white text-[#262262] px-8 py-4 rounded-full font-bold hover:bg-blue-50 transition-all transform hover:scale-105">
