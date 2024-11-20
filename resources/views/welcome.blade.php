@@ -12,6 +12,23 @@
 <body class="bg-gray-50">
     <!-- Hero Section -->
     <div class="bg-gradient-to-r from-[#262262] to-[#1a1740] text-white">
+        <div class="container mx-auto px-4 py-6">
+            <!-- Navbar -->
+            <div class="flex justify-between items-center">
+                <div>
+                    <!-- Logo (optional) -->
+                    <a href="#" class="text-xl font-bold text-white">
+                        ShareTap
+                    </a>
+                </div>
+                <div>
+                    <!-- Login Button -->
+                    <a href="{{ route('login') }}" class="bg-white text-[#262262] px-6 py-2 rounded-full font-bold hover:bg-blue-50 transition-all transform hover:scale-105">
+                        Login
+                    </a>
+                </div>
+            </div>
+        </div>
         <div class="container mx-auto px-4 py-20">
             <div class="max-w-4xl mx-auto text-center">
                 <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">Transform Business Networking with Digital Innovation</h1>
