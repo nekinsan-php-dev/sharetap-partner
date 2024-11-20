@@ -7,8 +7,9 @@
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
         @vite(['resources/css/app.css', 'resources/js/app.js'])
-    </head>
 
+        @livewireStyles
+    </head>
 <body class="bg-gray-50">
     <!-- Hero Section -->
     <div class="bg-gradient-to-r from-[#262262] to-[#1a1740] text-white">
@@ -129,70 +130,7 @@
     </div>
 
     <!-- Contact Form Section -->
-    <div id="contact" class="container mx-auto px-4 py-20">
-        <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden">
-            <div class="md:flex">
-                <div class="bg-[#262262] text-white p-8 md:w-2/5">
-                    <h3 class="text-2xl font-bold mb-4">Start Your Journey</h3>
-                    <p class="mb-6">Join our network of successful distributors and be part of the digital revolution</p>
-                    <div class="space-y-4">
-                        <div class="flex items-center">
-                            <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span>Exclusive territory rights</span>
-                        </div>
-                        <div class="flex items-center">
-                            <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span>Comprehensive training</span>
-                        </div>
-                        <div class="flex items-center">
-                            <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span>Marketing support</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="p-8 md:w-3/5">
-                    <h3 class="text-2xl font-bold mb-6">Apply to Become a Distributor</h3>
-                    <form class="space-y-6">
-                        <div class="grid md:grid-cols-2 gap-6">
-                            <div>
-                                <label class="block text-gray-700 mb-2">First Name</label>
-                                <input type="text" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#262262] focus:border-transparent" required>
-                            </div>
-                            <div>
-                                <label class="block text-gray-700 mb-2">Last Name</label>
-                                <input type="text" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#262262] focus:border-transparent" required>
-                            </div>
-                        </div>
-                        <div>
-                            <label class="block text-gray-700 mb-2">Email</label>
-                            <input type="email" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#262262] focus:border-transparent" required>
-                        </div>
-                        <div>
-                            <label class="block text-gray-700 mb-2">Phone</label>
-                            <input type="tel" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#262262] focus:border-transparent" required>
-                        </div>
-                        <div>
-                            <label class="block text-gray-700 mb-2">Business Location</label>
-                            <input type="text" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#262262] focus:border-transparent" required>
-                        </div>
-                        <div>
-                            <label class="block text-gray-700 mb-2">Message</label>
-                            <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#262262] focus:border-transparent" rows="4" required></textarea>
-                        </div>
-                        <button type="submit" class="w-full bg-[#262262] text-white py-4 rounded-lg font-bold hover:bg-[#1a1740] transition-all transform hover:scale-105">
-                            Submit Application
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
+    <livewire:distributor-form />
 
 
 <!-- Footer (continuing from previous code) -->
@@ -246,5 +184,7 @@
         </div>
     </div>
 </footer>
+
+@livewireScripts
 </body>
 </html>
